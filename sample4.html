@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        
+        th, td {
+            padding: 15px;
+        }
+        
+        th {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>테이블 태그 연습</h1>
+    
+    <h2>기본 테이블 연습</h2>
+    <table width="100%">
+        <tr>
+            <th>제목</th>
+            <th>저자</th>
+        </tr>
+        <tr>
+            <th>자바의 정석</th>
+            <th>홍길동</th>
+        </tr>
+        <tr>
+            <th>이것이 자바다</th>
+            <th>이순신</th>
+        </tr>       
+    </table>
+    
+    <h2>셀 병합 연습</h2>
+    <table width="100%">
+        <tr>
+            <td></td>
+            <td colspan="2"></td>
+            <!--<td></td>-->
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    
+    <h2>셀 병합 연습</h2>
+    <table width="100%">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan="4"></td>   
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>   
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>     
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>   
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    
+    <h2>셀 병합하기1</h2>
+    <!--table[width="100%"]>(tr>td*4)*6-->
+    <table width="100%">
+        <tr>
+            <td colspan="2"></td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan="2"></td>  
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan="2"></td>  
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    
+    <h2>셀 병합하기 연습2</h2>
+    <table width="100%">
+        <tr>
+            <td colspan="3">1팀</td>
+            <td colspan="3">2팀</td>
+        </tr>
+        <tr>
+            <td>이름</td>
+            <td>목표</td>
+            <td>실적</td>
+            <td>이름</td>
+            <td>목표</td>
+            <td>실적</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>합계</td>
+            <td colspan="2"></td> 
+            <td>합계</td>
+            <td colspan="2"></td>
+        </tr>
+    </table>
+</body>
+</html>

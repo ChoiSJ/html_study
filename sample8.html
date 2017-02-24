@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>폼 태그</h1>
+    
+    <h3>회원 가입 폼</h3>
+    <form>
+        이름:<br />
+        <input type="text" name="username" maxlength="10" /> <br />
+        비밀번호:<br />
+        <input type="password" name="userpwd" /> <br />
+        취미:<br />
+        <input type="checkbox" name="hobby" value="s" /> 스포츠
+        <input type="checkbox" name="hobby" value="g" /> 게임
+        <input type="checkbox" name="hobby" value="m" /> 음악
+        <input type="checkbox" name="hobby" value="r" /> 독서<br />
+        성별:<br />
+        <input type="radio" name="gender" value="female" />여성
+        <input type="radio" name="gender" value="male" />남성
+        <input type="radio" name="gender" value="other" />그외<br />
+        사진:<br />
+        <input type="file" name="photo" /><br />
+        생일:<br />
+        <input type="date" name="birth" /><br />
+        나이:<br />
+        <input type="number" name="age" /><br />
+        병역:<br />
+        <select name="mil">
+            <option value="army">육군</option>
+            <option value="navy">해군</option>
+            <option value="air">공군</option>
+            <option value="etc">기타</option>
+        </select><br />
+        자기소개:<br />
+        <textarea name="memo" rows="5" cols="60"></textarea><br />
+        
+        <input type="submit" value="등록" />
+        <input type="reset" value="취소" />
+    </form>
+</body>
+</html>

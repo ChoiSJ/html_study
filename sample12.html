@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        이름:<input type="text" id="user-name" name="username"/><br/>
+        생일:<input type="date" id="user-birth" name="birth"/><br/>
+        주소:<input type="text" id="user-addr" name="addr"><br/>
+        <button>등록</button>
+    </form>
+    
+    <p id="first">첫 번째 단락</p>
+    <p id="second">두 번째 단락</p>
+    <p id="third">세 번째 단락</p>
+    <p id="fourth">네 번째 단락</p>
+    
+    <div>
+        <button onclick="show(1);">1번</button>
+        <button onclick="show(2);">2번</button>
+        <button onclick="show(3);">3번</button>
+        <button onclick="show(4);">4번</button>
+    </div>
+</body>
+<script>
+    document.getElementById("user-name").value = "홍길동";
+    document.getElementById("user-birth").value = "2017-01-02";
+    document.getElementById("user-addr").value = "서울 종로구";
+    
+    document.getElementById("first").style.display = "block";
+    
+    function show(no) {
+        document.getElementById("first").style.display = "none";
+        document.getElementById("second").style.display = "none";
+        document.getElementById("third").style.display = "none";
+        document.getElementById("fourth").style.display = "none";
+        
+        if (no == 1) {
+            document.getElementById("first").style.display = "block";
+        } else if (no == 2) {
+            document.getElementById("second").style.display = "block";
+        } else if (no == 3) {
+            document.getElementById("third").style.display = "block";
+        } else if (no == 4) {
+            document.getElementById("fourth").style.display = "block";
+        }
+    }
+</script>
+</html>
